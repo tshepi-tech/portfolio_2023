@@ -5,29 +5,57 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(../Images/HeroBackground.jpg);
+	text-align: center;
+	background-color: var(--gray);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
 .hero h1 {
-	font-size: 32px;
-	animation: slide-in-anim 1.5s ease-out forwards;
+	animation: slide-right 2s ease-out forwards;
 }
 
-@keyframes slide-in-anim {
-	20% {
+.hero h2 {
+	animation: slide-left 2s ease-out forwards;
+}
+
+.hero .btn {
+	opacity: 0;
+	animation: slide-up 0.9s ease-out forwards;
+	animation-delay: 0.9s;
+}
+
+@keyframes slide-left {
+	from {
 		opacity: 0;
+		transform: translateX(20px);
 	}
-	60% {
-		transform: translateX(-45%);
-	}
-	75% {
-		transform: translateX(-52%);
-	}
-	100% {
+	to {
 		opacity: 1;
-		transform: translateX(-50%);
+		transform: translateX(0);
+	}
+}
+
+@keyframes slide-right {
+	from {
+		opacity: 0;
+		transform: translateX(-20px);
+		backdrop-filter: blur(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+		backdrop-filter: blur(20px);
+	}
+}
+@keyframes slide-up {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
 	}
 }
