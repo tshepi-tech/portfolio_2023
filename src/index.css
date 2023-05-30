@@ -18,6 +18,28 @@
 	--other: #d4a373;
 }
 
+.dark {
+	--background: #181616;
+	--light: #e9edc9;
+	--bright: #faedcd;
+	--main: #6a53f0;
+	--transparent-white: #141414f1;
+	--accent-gray-line: #222020;
+	--gray: #333131;
+	--dark-gray: #f1efee;
+	--medium-gray: #a8a5a5;
+	--black: #ffffff;
+	--white: #000;
+	--footer: #000;
+	--box-shadow: 0 3px 8px #000000;
+	--language: #ffd6db;
+	--framework: #a8e2ff;
+	--database: #cbbefa;
+	--other: #d4a373;
+	--design: #fdd1f6;
+	--form: #39364d;
+}
+
 body {
 	font-family: "Montserrat", sans-serif;
 	background-color: var(--white);
