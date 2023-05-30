@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -17,6 +19,7 @@
 }
 
 body {
+	font-family: "Montserrat", sans-serif;
 	background-color: var(--white);
 	color: var(--black);
 	position: relative;
@@ -84,6 +87,14 @@ a:hover {
 	text-transform: lowercase;
 	font-weight: 300;
 	letter-spacing: 1px;
+}
+
+.input1 {
+	padding: 0.4rem 20px;
+}
+
+textarea {
+	padding: 2rem;
 }
 
 /*flex*/

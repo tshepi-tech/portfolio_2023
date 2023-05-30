@@ -1,3 +1,6 @@
 #about img {
 	border-radius: 50%;
 }
+#about {
+	max-width: 70vw;
+}

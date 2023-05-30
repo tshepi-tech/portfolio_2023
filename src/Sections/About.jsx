@@ -34,6 +34,14 @@ export default function About() {
 						<a href="https://careersesh.club">jobseekers community</a> or
 						exploring life with my son
 					</p>
+					<div className="row">
+						<a href="#portfolio" title="About" className="btn">
+							Portfolio
+						</a>
+						<a href="#resume" className="btn" title="contact">
+							Resume
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>

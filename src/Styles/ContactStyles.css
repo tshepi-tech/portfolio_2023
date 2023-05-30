@@ -1,0 +1,12 @@
+#form .row {
+	gap: 1.5rem;
+}
+.contact_form h2 {
+	text-align: center;
+}
+
+.contact_form {
+	background-color: var(--gray);
+	padding-top: 2rem;
+	border-radius: 2rem;
+}
