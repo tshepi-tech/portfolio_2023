@@ -1,6 +1,8 @@
 import AppStyles from "./Styles/AppStyles.css";
 import { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
+import Portfolio from "./Pages/Portfolio";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -29,9 +31,10 @@ export default function App() {
 			<button className="toggle" onClick={toggleTheme}>
 				<FontAwesomeIcon icon={theme === "" ? faMoon : faLightbulb} />
 			</button>
-			<Home />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/portfolio" element={<Portfolio />} />
+			</Routes>
 		</div>
 	);
 }
-
-//use intersection observer

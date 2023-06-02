@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import headshot from "../Images/headshot.jpg";
 import AboutStyles from "../Styles/AboutStyles.css";
 
@@ -35,9 +36,9 @@ export default function About() {
 						exploring life with my son
 					</p>
 					<div className="row">
-						<a href="#portfolio" title="About" className="btn">
+						<Link to="/portfolio" className="btn">
 							Portfolio
-						</a>
+						</Link>
 						<a href="#resume" className="btn" title="contact">
 							Resume
 						</a>
