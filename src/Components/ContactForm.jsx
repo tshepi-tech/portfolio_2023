@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import swal from "sweetalert";
 
 export default function ContactForm() {
 	const form = useRef();
@@ -15,10 +16,16 @@ export default function ContactForm() {
 			)
 			.then(
 				(result) => {
-					alert("Message sent successfully! 👌");
+					swal({
+						title: "Thank you",
+						text: "Your email has been sent to Tshepiso",
+					});
 				},
 				(error) => {
-					alert("Failed to send message. 😕");
+					swal({
+						title: "Try again",
+						text: "Unfortunately your email has not been sent",
+					});
 				},
 			);
 	};
