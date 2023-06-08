@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
+import CodeProjects from "./Pages/CodeProjects";
 
 library.add(faLightbulb, faMoon);
 
@@ -34,6 +35,7 @@ export default function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/portfolio" element={<Portfolio />} />
+				<Route path="/code_projects" element={<CodeProjects />} />
 			</Routes>
 		</div>
 	);

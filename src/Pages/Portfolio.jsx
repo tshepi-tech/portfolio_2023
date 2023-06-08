@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import CodeProjects from "./CodeProjects";
 import coffee from "../Images/coffee_cups.png";
 import meetup from "../Images/CareerSesh_online.png";
 import { useRef, useEffect } from "react";
@@ -46,7 +48,9 @@ export default function Portfolio() {
 							felis gravida. Aliquam venenatis venenatis sapien egestas
 							fringilla.
 						</p>
-						<a href="#see_more">See more</a>
+						<Link to="/code_projects" className="btn">
+							See more
+						</Link>
 					</div>
 				</div>
 				<div className="portfolio-element row">

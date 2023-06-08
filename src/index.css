@@ -7,6 +7,7 @@
 }
 
 :root {
+	--box-shadow: 0 0 5px #c0b4b4;
 	--black: #000;
 	--white: #fff;
 	--background: #fefae0;
