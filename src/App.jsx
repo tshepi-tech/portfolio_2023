@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import CodeProjects from "./Pages/CodeProjects";
+import Navigation from "./Components/Navigation";
 
 library.add(faLightbulb, faMoon);
 
@@ -32,6 +33,7 @@ export default function App() {
 			<button className="toggle" onClick={toggleTheme}>
 				<FontAwesomeIcon icon={theme === "" ? faMoon : faLightbulb} />
 			</button>
+			<Navigation />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/portfolio" element={<Portfolio />} />
