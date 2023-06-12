@@ -14,3 +14,13 @@
 	z-index: 4;
 	list-style-type: none;
 }
+
+.toggle {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	color: var(--bright);
+	font-size: 1.8rem;
+}

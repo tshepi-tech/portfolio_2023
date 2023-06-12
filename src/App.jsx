@@ -30,10 +30,7 @@ export default function App() {
 
 	return (
 		<div className={`${theme} container`}>
-			<button className="toggle" onClick={toggleTheme}>
-				<FontAwesomeIcon icon={theme === "" ? faMoon : faLightbulb} />
-			</button>
-			<Navigation />
+			<Navigation toggleTheme={toggleTheme} theme={theme} />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/portfolio" element={<Portfolio />} />
