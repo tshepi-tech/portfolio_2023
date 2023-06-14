@@ -12,9 +12,17 @@ import { faMoon } from "@fortawesome/free-regular-svg-icons";
 library.add(faLightbulb, faMoon);
 
 export default function Navigation({ toggleTheme, theme }) {
+	const miniNav = () => {
+		var x = document.getElementById("myNavbar");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "navbar";
+		}
+	};
 	return (
 		<>
-			<ul className="navbar">
+			<ul className="navbar" id="myNavbar">
 				<li>
 					<Link to="/">Home</Link>
 				</li>
@@ -33,6 +41,11 @@ export default function Navigation({ toggleTheme, theme }) {
 					<button className="toggle" onClick={toggleTheme}>
 						<FontAwesomeIcon icon={theme === "" ? faMoon : faLightbulb} />
 					</button>
+				</li>
+				<li className="icon1">
+					<a href="javascript:void(0);" className="icon" onClick={miniNav}>
+						size change
+					</a>
 				</li>
 			</ul>
 		</>
